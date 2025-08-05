@@ -7,7 +7,7 @@ Esta app nada tiene que ver con el editor de Windows.
 
 v1.0
 Este software se basa en este repositorio: https://github.com/syndicatefx/textpad/
-Se ha respetado el código original todo lo posible y se ha añadido la función de envío del texto escrito a WordPress, como borrador (draft).
+Se ha respetado el código original de Paulo Nunes todo lo posible y se ha añadido la función de envío del texto escrito a WordPress, como borrador (draft).
 
 ## Características
 
