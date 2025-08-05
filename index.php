@@ -140,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
 		<p>Este es un bloc de notas en línea sencillo, sin WYSIWYG ni extras, simplemente escribe. El texto permanecerá en tu navegador hasta que decidas borrarlo; vuelve cuando quieras para seguir escribiendo.
 		    También puedes descargar tu texto como archivo .txt al terminar y ¡enviar el texto como borrador a tu WordPress!</p>
 		<button id="start">Empieza a escribir</button>
-		<p class="footnote">Experimento construido a partir del prototipo de <a href="https://github.com/syndicatefx/">Paulo Nunes</a> (<a hreef="https://github.com/syndicatefx/textpad">c&oacute;digo fuente)</a><br /><br />La modificación para enviar a WordPress es de <a href="https://github.com/blogpocket">Antonio Cambronero (Blogpocket.com)</a></p>
+		<p class="footnote">Experimento construido a partir del prototipo de <a href="https://github.com/syndicatefx/">Paulo Nunes</a> (<a hreef="https://github.com/syndicatefx/textpad">c&oacute;digo fuente)</a><br /><br />La modificación para enviar a WordPress es de <a href="https://github.com/blogpocket">Antonio Cambronero (Blogpocket.com)</a><br /><br /><a href="https://blogpocket.com/textpad/">Más info</a></p>
 	</section>
 </div>
 
