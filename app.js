@@ -1,7 +1,11 @@
-/*  TextPad - 1.2.1
+/*  TextPad-WordPress - 1.1
+ *  1.1: Mensajes traducidos al español
+ *  1.0: Añadida función de enviar a WordPress (requiere estar logueado)
+ *  Autor: Antonio Cambronero (Blogpocket.com)
+ *  Código fuente: https://github.com/blogpocket
  *
  *  File: app.js
- *  Author: Paulo Nunes
+ *  Author de software original (TextPad 1.2.1): Paulo Nunes
  *  Source: https://github.com/syndicatefx/textpad
  *  License: MIT
  */
@@ -56,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         tags        = tagsInput.value.trim(); // Lee etiquetas
 
     if (!postTitle) {
-      smoke.alert("Please enter a title before publishing!");
+      smoke.alert("¡Por favor, introduce un t&iacute;tulo antes de publicar!");
       return;
     }
 
@@ -153,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   }else{  //3
-    smoke.alert("Sorry, either your browser doesn't support LocalStorage, or you have exceeded storage limits!");
+    smoke.alert("¡Lo siento, o tu navegador no soporta LocalStorage o has excedido los l&iacute;mites de almacenamiento!");
   };
 
   /*-----------------------------------
@@ -168,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     if(title.value == "") {
       
-      smoke.prompt("Please give your file a title!\n or just keep the default below.", function(e) {
+      smoke.prompt("¡Por favor, da un nombre a tu archivo!\n o simplemente mant&eacute;n el valor predeterminado a continuación.", function(e) {
         if(e) {
           title.value = e;
           localStorage.setItem("textPad-title", e);
@@ -177,8 +181,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }, {
         reverseButtons: true,
         value: "my-text-pad-file",
-        ok: "Save",
-        cancel: "Cancel"
+        ok: "Guardar",
+        cancel: "Cancelar"
       });
 
     } else {
@@ -191,9 +195,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   clear.addEventListener("click", function(e) {
     if(content.value == "" && title.value == "") {
-      smoke.alert("There is nothing to delete!\nGo ahead and write something first.")
+      smoke.alert("¡No hay nada que borrar!\nAdelante, escribe algo primero.")
     } else {
-      smoke.confirm("This will trash your current text and clear it from TextPad's localstorage data, are you sure?",function(e) {
+      smoke.confirm("Esto eliminará tu texto actual y lo borrará de los datos de almacenamiento local de TextPad. ¿Estás seguro?",function(e) {
         if(e) {
           localStorage.removeItem('textPad-title')
           localStorage.removeItem('textPad-content');
@@ -203,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
           chars.innerHTML = "0:chars";
         }}, {
         reverseButtons: true,
-        ok: "YES",
+        ok: "S&Iacute;",
         cancel: "NO"
       });
     };
